@@ -1,0 +1,60 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.loader {
+    div {
+        background-color: rgba(255, 255, 255, .7);
+    }
+}
+
+/* Loading Handler */
+
+.loading-handler {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loading-handler > div {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 0;
+}
+
+.success {
+    background-color: rgb(39, 222, 39);
+    /* z-index: 1; */
+}
+
+.error {
+    background-color: red;
+    /* z-index: 1; */
+}
+
+.loading {
+    background-color: gray;
+    /* z-index: 1; */
+}
+
+/* Classes utilitaires */
+.hidden { display: none; }
+.show { z-index: 1; }
+
+
